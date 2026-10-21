@@ -57,7 +57,7 @@ The runnable starter and repository instructions already exist. Absent layers do
 - **Blockers:** —
 - **Unknowns:** Access resolved on 2026-10-21: both Open-Meteo requests succeeded from the local browser with HTTP 200 and required location/current-weather fields.
 - **Risk:** Access uncertainty is checked before committing to the first live-weather demo.
-- **Status:** done — live access confirmed. See [access-validation.md](../changes/gh-1-live-weather-access/access-validation.md), attempt 3. Manual review confirmed; implementation workflow commit remains pending.
+- **Status:** done — live access confirmed. See [access-validation.md](../changes/gh-1-live-weather-access/access-validation.md), attempt 3. Manual review confirmed; phase 2 committed as `7145f10`, with plan closeout `ca2f00f`.
 
 Provider decision on 2026-10-21: Open-Meteo replaces the intermediate Xweather choice and original OpenWeather assumption. Browser access from `http://127.0.0.1:5173` resolved Warsaw, Poland, Mazovia and retrieved model-derived current conditions in Celsius. Initial tooling interruptions were resolved through user handoff; attempt history is retained in the evidence above.
 
@@ -91,7 +91,7 @@ Provider decision on 2026-10-21: Open-Meteo replaces the intermediate Xweather c
 
 | Roadmap ID | Change ID | Suggested issue title | Ready for `/10x-plan` | Notes |
 |---|---|---|---|---|
-| F-01 | gh-1-live-weather-access | Confirm live weather access for the demo | not needed | Original alias: `validate-weather-access`. Live access confirmed in access-validation.md; manual review confirmed; workflow commit pending. |
+| F-01 | gh-1-live-weather-access | Confirm live weather access for the demo | not needed | Original alias: `validate-weather-access`. Live access confirmed in access-validation.md; manual review confirmed; phase 2 `7145f10`, closeout `ca2f00f`. |
 | S-01 | search-current-weather | Search a location and display live current weather | yes | F-01 confirmed browser access on 2026-10-21; ready to plan the search flow. |
 | S-02 | explain-weather-search-failures | Distinguish unknown locations from weather-service failures | no | Plan after S-01 delivers the search flow. |
 

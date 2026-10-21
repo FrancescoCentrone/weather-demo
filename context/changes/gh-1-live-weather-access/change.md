@@ -1,7 +1,7 @@
 ---
 change_id: gh-1-live-weather-access
 title: "Confirm live weather access for the demo"
-status: implemented
+status: impl_reviewed
 created: 2026-10-20
 updated: 2026-10-21
 archived_at: null
@@ -18,4 +18,4 @@ On 2026-10-21, after difficulty obtaining Xweather credentials, the user selecte
 
 Phase 1 was committed as `0f893d4`. Phase 2 started on 2026-10-21: the local Vite page is available, but browser focus changes interrupted agent console execution. [Access validation](access-validation.md) records the tooling blocker and manual-console fallback; Open-Meteo access remains unverified and S-01 remains blocked.
 
-Phase 2 access outcome confirmed on 2026-10-21 after user handoff at Chrome's paste warning: both real requests returned HTTP 200 from `http://127.0.0.1:5173`. Warsaw, Poland, Mazovia resolved and current weather returned 12.7 °C, WMO code 3 (Overcast), timestamp 10:15 Europe/Warsaw. See [access validation, attempt 3](access-validation.md). S-01 is ready for planning. The user confirmed the phase 2 evidence and readiness review on 2026-10-21; the commit remains pending.
+Phase 2 access outcome confirmed on 2026-10-21 after user handoff at Chrome's paste warning: both real requests returned HTTP 200 from `http://127.0.0.1:5173`. Warsaw, Poland, Mazovia resolved and current weather returned 12.7 °C, WMO code 3 (Overcast), timestamp 10:15 Europe/Warsaw. See [access validation, attempt 3](access-validation.md). S-01 is ready for planning. The user confirmed the phase 2 evidence and readiness review on 2026-10-21; phase 2 was committed as `7145f10` and the plan closeout as `ca2f00f`.

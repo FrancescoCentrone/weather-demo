@@ -94,7 +94,7 @@ This focused console summary was also read back through the browser's console-lo
 
 ### Readiness and Follow-Up
 
-F-01's live access outcome is established and S-01 can be planned. This proves browser access for this location, origin, and moment; it is not a service-availability guarantee or an automated regression suite. Re-run the [runbook](access-runbook.md) before the presentation if a fresh access check is needed. The user confirmed the evidence and roadmap review on 2026-10-21; the phase 2 commit is pending.
+F-01's live access outcome is established and S-01 can be planned. This proves browser access for this location, origin, and moment; it is not a service-availability guarantee or an automated regression suite. Re-run the [runbook](access-runbook.md) before the presentation if a fresh access check is needed. The user confirmed the evidence and roadmap review on 2026-10-21; phase 2 was committed as `7145f10` and the plan closeout as `ca2f00f`.
 
 ## Constraints and Attribution
 
@@ -104,4 +104,4 @@ Current conditions are model-derived. The successful evidence above retains Cels
 
 ## Acceptance Status
 
-Both real-service operations were exercised and their browser-readable results verified. The evidence establishes readiness for S-01. No weather UI, reusable API module, backend, or proxy was added. The GitHub issue has not been edited or closed. Phase 2 manual confirmation was received on 2026-10-21; its commit is pending.
+Both real-service operations were exercised and their browser-readable results verified. The evidence establishes readiness for S-01. No weather UI, reusable API module, backend, or proxy was added. The GitHub issue has not been edited or closed. Phase 2 manual confirmation was received on 2026-10-21; phase 2 and closeout commits are `7145f10` and `ca2f00f`.
