@@ -173,12 +173,12 @@ No persistent data or migration exists. The scoped application change can be rev
 
 #### Automated
 
-- [ ] 1.1 TypeScript and production build pass: `npm run build`.
-- [ ] 1.2 Oxlint passes: `npm run lint`.
+- [x] 1.1 TypeScript and production build pass: `npm run build`.
+- [x] 1.2 Oxlint passes: `npm run lint`.
 
 #### Manual
 
-- [ ] 1.3 The presenter confirms the initial search screen, keyboard submission, loading state, weather card, attribution, and narrow layout are readable and usable.
+- [x] 1.3 The presenter confirms the initial search screen, keyboard submission, loading state, weather card, attribution, and narrow layout are readable and usable.
 
 ### Phase 2: Verify and Record Browser Behavior
 
