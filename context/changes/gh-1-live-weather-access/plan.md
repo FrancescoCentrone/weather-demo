@@ -192,10 +192,10 @@ No application or data migration. Preserve existing source, configs, dependencie
 
 #### Automated
 
-- [x] 2.1 Evidence and runbook files exist and whitespace checks pass
-- [x] 2.2 Only intended documentation paths changed
+- [x] 2.1 Evidence and runbook files exist and whitespace checks pass — 7145f10
+- [x] 2.2 Only intended documentation paths changed — 7145f10
 
 #### Manual
 
-- [x] 2.3 The evidence accurately records both browser operations or explicitly identifies unexecuted operations, a concrete blocker, owner, and next action; retained output contains no credentials
-- [x] 2.4 Roadmap and change-record review confirms S-01 is ready only after complete successful access evidence; blocked or partial validation remains blocked
+- [x] 2.3 The evidence accurately records both browser operations or explicitly identifies unexecuted operations, a concrete blocker, owner, and next action; retained output contains no credentials — 7145f10
+- [x] 2.4 Roadmap and change-record review confirms S-01 is ready only after complete successful access evidence; blocked or partial validation remains blocked — 7145f10
