@@ -4,7 +4,7 @@ Weather Demo is a local browser demo using Vite, React, TypeScript, and npm. The
 
 ## Scope and commands
 
-- Follow @context/foundation/prd.md and @context/foundation/tech-stack.md. Keep OpenWeather calls in the browser; do not add a backend, hosting, deployment, or CI/CD configuration.
+- Follow @context/foundation/prd.md and @context/foundation/tech-stack.md. Keep Open-Meteo calls in the browser; do not add a backend, hosting, deployment, or CI/CD configuration.
 - Preserve the agreed scope: current weather in Celsius, first location match with country/region, and distinct unknown-location versus service-failure messages. Exclude accounts, forecasts, favorites, device geolocation, and unit switching.
 - Run `npm run dev` for local development. Run `npm run build` and `npm run lint` after application changes; build includes TypeScript checking, and lint uses Oxlint. Scripts are defined in @package.json.
 

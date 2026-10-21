@@ -2,7 +2,7 @@
 project: "Weather Demo"
 context_type: greenfield
 created: 2026-10-20
-updated: 2026-10-20
+updated: 2026-10-21
 product_type: web-app
 target_scale:
   users: small
@@ -125,4 +125,6 @@ Phases 1–6 are complete. The user accepted the closing cross-check and chose t
 
 ## Forward: tech-stack
 
-User constraints: no backend; use OpenWeather API.
+User constraints: no backend; use Open-Meteo's public API directly from the browser.
+
+Provider decision, 2026-10-21: the user selected Open-Meteo after difficulty obtaining Xweather credentials. This supersedes the original OpenWeather choice in the preserved seed quote and the intermediate Xweather decision. Public access needs no signup, API key, or credit card. Keep the existing current-weather, Celsius-only scope; document non-commercial free-use terms and attribution, and interpret the provider's model-derived weather codes using its documented descriptions. Live browser access remains unverified until the F-01 check.
