@@ -184,12 +184,12 @@ No persistent data or migration exists. The scoped application change can be rev
 
 #### Automated
 
-- [x] 2.1 The verification record exists and contains separate automated-results and manual-scenario sections.
+- [x] 2.1 The verification record exists and contains separate automated-results and manual-scenario sections. — 09f412f
 
 #### Manual
 
-- [x] 2.2 A known location submitted from the local app displays live current Celsius temperature and readable conditions without login; observed browser responses and displayed values agree.
-- [x] 2.3 An ambiguous location uses the first returned match and clearly displays country and region when supplied; a second successful search replaces the first result without stale output.
-- [x] 2.4 Empty input makes no request; loading clears previous weather, prevents duplicate submissions, and ends after completion.
-- [x] 2.5 No-match and a controlled network failure show neutral feedback, leave no stale weather, and permit a subsequent successful manual search; a delayed request times out after approximately 30 seconds and restores submission.
-- [x] 2.6 The presenter reviews the recorded browser evidence and confirms S-01 acceptance, with distinct failure messages explicitly deferred to S-02.
+- [x] 2.2 A known location submitted from the local app displays live current Celsius temperature and readable conditions without login; observed browser responses and displayed values agree. — 09f412f
+- [x] 2.3 An ambiguous location uses the first returned match and clearly displays country and region when supplied; a second successful search replaces the first result without stale output. — 09f412f
+- [x] 2.4 Empty input makes no request; loading clears previous weather, prevents duplicate submissions, and ends after completion. — 09f412f
+- [x] 2.5 No-match and a controlled network failure show neutral feedback, leave no stale weather, and permit a subsequent successful manual search; a delayed request times out after approximately 30 seconds and restores submission. — 09f412f
+- [x] 2.6 The presenter reviews the recorded browser evidence and confirms S-01 acceptance, with distinct failure messages explicitly deferred to S-02. — 09f412f
