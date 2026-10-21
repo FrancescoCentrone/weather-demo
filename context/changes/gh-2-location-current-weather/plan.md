@@ -173,23 +173,23 @@ No persistent data or migration exists. The scoped application change can be rev
 
 #### Automated
 
-- [x] 1.1 TypeScript and production build pass: `npm run build`.
-- [x] 1.2 Oxlint passes: `npm run lint`.
+- [x] 1.1 TypeScript and production build pass: `npm run build`. — 1ad6f5b
+- [x] 1.2 Oxlint passes: `npm run lint`. — 1ad6f5b
 
 #### Manual
 
-- [x] 1.3 The presenter confirms the initial search screen, keyboard submission, loading state, weather card, attribution, and narrow layout are readable and usable.
+- [x] 1.3 The presenter confirms the initial search screen, keyboard submission, loading state, weather card, attribution, and narrow layout are readable and usable. — 1ad6f5b
 
 ### Phase 2: Verify and Record Browser Behavior
 
 #### Automated
 
-- [ ] 2.1 The verification record exists and contains separate automated-results and manual-scenario sections.
+- [x] 2.1 The verification record exists and contains separate automated-results and manual-scenario sections.
 
 #### Manual
 
-- [ ] 2.2 A known location submitted from the local app displays live current Celsius temperature and readable conditions without login; observed browser responses and displayed values agree.
-- [ ] 2.3 An ambiguous location uses the first returned match and clearly displays country and region when supplied; a second successful search replaces the first result without stale output.
-- [ ] 2.4 Empty input makes no request; loading clears previous weather, prevents duplicate submissions, and ends after completion.
-- [ ] 2.5 No-match and a controlled network failure show neutral feedback, leave no stale weather, and permit a subsequent successful manual search; a delayed request times out after approximately 30 seconds and restores submission.
-- [ ] 2.6 The presenter reviews the recorded browser evidence and confirms S-01 acceptance, with distinct failure messages explicitly deferred to S-02.
+- [x] 2.2 A known location submitted from the local app displays live current Celsius temperature and readable conditions without login; observed browser responses and displayed values agree.
+- [x] 2.3 An ambiguous location uses the first returned match and clearly displays country and region when supplied; a second successful search replaces the first result without stale output.
+- [x] 2.4 Empty input makes no request; loading clears previous weather, prevents duplicate submissions, and ends after completion.
+- [x] 2.5 No-match and a controlled network failure show neutral feedback, leave no stale weather, and permit a subsequent successful manual search; a delayed request times out after approximately 30 seconds and restores submission.
+- [x] 2.6 The presenter reviews the recorded browser evidence and confirms S-01 acceptance, with distinct failure messages explicitly deferred to S-02.
