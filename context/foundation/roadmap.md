@@ -3,7 +3,7 @@ project: Weather Demo
 version: 1
 status: draft
 created: 2026-10-20
-updated: 2026-10-20
+updated: 2026-10-21
 prd_version: 1
 main_goal: speed
 top_blocker: external
@@ -27,8 +27,8 @@ Here, “north star” means the smallest end-to-end user flow that proves the d
 
 | ID | Change ID | Outcome (user can …) | Prerequisites | PRD refs | Status |
 |---|---|---|---|---|---|
-| F-01 | validate-weather-access | (foundation) Live weather access is confirmed for the local demo, or a concrete access blocker is recorded. | — | FR-001, FR-002 | ready |
-| S-01 | search-current-weather | Presenter can enter a location and see the first match’s live current temperature in Celsius and conditions, with its country/region clearly shown and without logging in. | F-01 | US-01, FR-001, FR-002 | blocked |
+| F-01 | gh-1-live-weather-access | (foundation) Live weather access is confirmed for the local demo, or a concrete access blocker is recorded. | — | FR-001, FR-002 | done |
+| S-01 | search-current-weather | Presenter can enter a location and see the first match’s live current temperature in Celsius and conditions, with its country/region clearly shown and without logging in. | F-01 | US-01, FR-001, FR-002 | ready |
 | S-02 | explain-weather-search-failures | Presenter can distinguish an unknown location from a weather-service failure after submitting a search. | S-01 | US-01, FR-003 | proposed |
 
 ## Baseline
@@ -49,15 +49,17 @@ The runnable starter and repository instructions already exist. Absent layers do
 ### F-01: Confirm live weather access
 
 - **Outcome:** (foundation) Live weather access is confirmed for the local demo, or a concrete access blocker is recorded.
-- **Change ID:** validate-weather-access
+- **Change ID:** gh-1-live-weather-access (original roadmap alias: `validate-weather-access`)
 - **PRD refs:** FR-001, FR-002
 - **Unlocks:** S-01: verified access for its live location-search and weather-display acceptance path.
 - **Prerequisites:** —
 - **Parallel with:** —
 - **Blockers:** —
-- **Unknowns:** Is usable access to the location and current-weather service available? — Owner: user. Block: no; answering this is the purpose of this foundation.
+- **Unknowns:** Access resolved on 2026-10-21: both Open-Meteo requests succeeded from the local browser with HTTP 200 and required location/current-weather fields.
 - **Risk:** Access uncertainty is checked before committing to the first live-weather demo.
-- **Status:** ready
+- **Status:** done — live access confirmed. See [access-validation.md](../changes/gh-1-live-weather-access/access-validation.md), attempt 3. Manual review confirmed; implementation workflow commit remains pending.
+
+Provider decision on 2026-10-21: Open-Meteo replaces the intermediate Xweather choice and original OpenWeather assumption. Browser access from `http://127.0.0.1:5173` resolved Warsaw, Poland, Mazovia and retrieved model-derived current conditions in Celsius. Initial tooling interruptions were resolved through user handoff; attempt history is retained in the evidence above.
 
 ## Slices
 
@@ -68,10 +70,10 @@ The runnable starter and repository instructions already exist. Absent layers do
 - **PRD refs:** US-01, FR-001, FR-002
 - **Prerequisites:** F-01
 - **Parallel with:** —
-- **Blockers:** External weather-service access is not yet confirmed.
-- **Unknowns:** Can the demo obtain live location matches and current weather with the available service access? — Owner: user. Block: yes; F-01 resolves this before planning proceeds.
+- **Blockers:** —
+- **Unknowns:** Live access prerequisite resolved by F-01; see its browser evidence. The UI and reusable API boundary still require S-01 planning and implementation.
 - **Risk:** An unusable live-data dependency would prevent the core presentation flow.
-- **Status:** blocked
+- **Status:** ready
 
 ### S-02: Understand unsuccessful weather searches
 
@@ -89,8 +91,8 @@ The runnable starter and repository instructions already exist. Absent layers do
 
 | Roadmap ID | Change ID | Suggested issue title | Ready for `/10x-plan` | Notes |
 |---|---|---|---|---|
-| F-01 | validate-weather-access | Confirm live weather access for the demo | yes | Run `/10x-plan validate-weather-access`; resolves S-01’s blocking unknown. |
-| S-01 | search-current-weather | Search a location and display live current weather | no | Plan after F-01 confirms usable live service access. |
+| F-01 | gh-1-live-weather-access | Confirm live weather access for the demo | not needed | Original alias: `validate-weather-access`. Live access confirmed in access-validation.md; manual review confirmed; workflow commit pending. |
+| S-01 | search-current-weather | Search a location and display live current weather | yes | F-01 confirmed browser access on 2026-10-21; ready to plan the search flow. |
 | S-02 | explain-weather-search-failures | Distinguish unknown locations from weather-service failures | no | Plan after S-01 delivers the search flow. |
 
 ## Open Roadmap Questions
@@ -111,3 +113,5 @@ These inherited questions do not block the declared primary workflow: work sched
 - **No backend, hosting, deployment, or CI/CD** — stack hand-off: explicit local-only scope.
 
 ## Done
+
+- F-01: live Open-Meteo location/current-weather access confirmed on 2026-10-21; evidence in `context/changes/gh-1-live-weather-access/access-validation.md`. This records the access outcome, not closure of the implementation workflow or GitHub issue.

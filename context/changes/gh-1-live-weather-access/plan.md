@@ -181,21 +181,21 @@ No application or data migration. Preserve existing source, configs, dependencie
 
 #### Automated
 
-- [x] 1.1 Provider references are aligned in active instructions and the historical seed quote is preserved
-- [x] 1.2 The runbook exists and whitespace checks pass
+- [x] 1.1 Provider references are aligned in active instructions and the historical seed quote is preserved — 0f893d4
+- [x] 1.2 The runbook exists and whitespace checks pass — 0f893d4
 
 #### Manual
 
-- [x] 1.3 Review confirms that the runbook is repeatable, has no literal credentials, and covers both required operations and the agreed browser fallback
+- [x] 1.3 Review confirms that the runbook is repeatable, has no literal credentials, and covers both required operations and the agreed browser fallback — 0f893d4
 
 ### Phase 2: Validate Browser Access and Record the Readiness Decision
 
 #### Automated
 
-- [ ] 2.1 Evidence and runbook files exist and whitespace checks pass
-- [ ] 2.2 Only intended documentation paths changed
+- [x] 2.1 Evidence and runbook files exist and whitespace checks pass
+- [x] 2.2 Only intended documentation paths changed
 
 #### Manual
 
-- [ ] 2.3 The evidence accurately records both browser operations or explicitly identifies unexecuted operations, a concrete blocker, owner, and next action; retained output contains no credentials
-- [ ] 2.4 Roadmap and change-record review confirms S-01 is ready only after complete successful access evidence; blocked or partial validation remains blocked
+- [x] 2.3 The evidence accurately records both browser operations or explicitly identifies unexecuted operations, a concrete blocker, owner, and next action; retained output contains no credentials
+- [x] 2.4 Roadmap and change-record review confirms S-01 is ready only after complete successful access evidence; blocked or partial validation remains blocked
