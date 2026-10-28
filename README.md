@@ -73,6 +73,8 @@ The skill validates the URL, confirms GitHub CLI authentication, assigns the iss
 context/changes/gh-123-example-change/change.md
 ```
 
+It commits and pushes only this initial record so the branch has a diff from `main`, opens a draft pull request targeting `main`, and appends the PR link to the GitHub issue description while preserving its existing content. An existing matching open PR or issue link is reused. Invoking `/oracle-new` authorizes these setup actions; later planning and implementation commits keep their own approval steps.
+
 Use the exact issue URL from this repository. It stops safely if the issue is closed, the branch or change folder already exists, GitHub authentication fails, or the remote is not a GitHub repository.
 
 ```mermaid
@@ -87,7 +89,10 @@ flowchart TD
     F -- No --> G[Fetch origin main]
     G --> H[Create and push feature branch]
     H --> I[Write change.md]
-    I --> J[Suggest oracle-plan command]
+    I --> J[Commit and push initial change record]
+    J --> K[Open or reuse draft pull request]
+    K --> L[Link PR in issue description and verify]
+    L --> M[Suggest oracle-plan command]
 ```
 
 ### `/oracle-plan`
